@@ -1,44 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --anchor-color: #667085;
+    --text-color: #667085;
     --red-color: #8E2424;
     --white-color: #FFFFFF;
+    --border-color: #EAECF0;
+    --black-color: #101828;
 }
 
 * {
+    font-family: "Inter", sans-serif;
     padding: 0%;
+    box-sizing: border-box;
     margin: 0%;
     background-color: var(--white-color);
+    font-weight: 400;
 }
 
-.cabecalho {
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    height: 5%;
+body {
+    width: 100%;
+    height: 100vh;
 }
 
-.cabecalho__nav {
+.nav {
     display: flex;
-    padding: 1% 6%;
+    font-size: 1rem;
+    height: 5%;
+    width: 100%;
+    padding: 2% 5rem;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav__logo{
-    width: 148px;
+    width: 9.25rem;
 }
 
 .nav__paginas {
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 2rem;
     padding-right: 20%;
 }
 
 .nav__paginas__anchor {
     text-decoration: none;
-    color: var(--anchor-color);
+    color: var(--text-color);
 }
 
 .nav__login {
@@ -49,8 +56,8 @@
 
 .nav__login__anchor {
     text-decoration: none;
-    color: var(--anchor-color);
-    padding: 10px 18px;
+    color: var(--text-color);
+    padding: 0.625rem 1.125rem;
 }
 
 .nav__login__cadastrar {
@@ -60,6 +67,149 @@
     color: var(--white-color);
     text-decoration: none;
     border: var(--red-color) 1px solid;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     padding: 10px 18px;
+}
+
+.cabecalho__aboutme {
+    display: flex;   
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem 0px;
+    padding: 6rem 0px;
+}
+
+.aboutme__txtvermelho {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--red-color);
+}
+
+.aboutme__titulo {
+    font-weight: 600;
+    font-size: 3rem;
+    color: var(--black-color);
+}
+
+.aboutme__paragrafo {
+    width: 49.5rem;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.numbers {
+    padding: 0 5rem 6rem;
+}
+
+.numbers-container {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.numbers-section__titulo {
+    color: var(--red-color);
+    font-weight: 600;
+    font-size: 3.75rem;
+    margin: 0.25rem 0;
+}
+
+.numbers-section__subtitulo {
+    margin: 0.5rem 0;
+    font-weight: 500;
+    color: var(--black-color);
+    font-size: 1,125rem;
+}
+
+.texto-padrao {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.vagas {
+    padding: 6rem 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.vagas__comercial {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.comercial__exposicao {
+    color: var(--red-color);
+    background-color: #8E24240D;
+    background-blend-mode: multiply;
+    padding: 0.25rem 0.75rem;
+    font-weight: 500;
+    border-radius: 1rem;
+}
+
+.comercial__item {
+    margin-top: 20px;
+}
+
+.comercial__titulo {
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 2.25rem;
+}
+
+.comercial__paragrafo {
+    font-size: 1.25rem;
+}
+
+.comercial__imagem{
+    width: 100%;
+    margin: 4rem 0;
+}
+
+.vagas__vagas {
+    padding: 0 16rem;
+}
+
+.vagas__vaga {
+    padding-bottom: 4rem;
+}
+
+.vaga__area {
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.area__posicoes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.area__posicao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: var(--border-color) solid 1px;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.posicao__nome {
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+.posicao__info {
+    margin-right: 1.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 1rem;
 }
